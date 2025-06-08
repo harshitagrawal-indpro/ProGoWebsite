@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Play, Instagram, Video, Palette } from 'lucide-react';
+import { ExternalLink, Play, Video, Code } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Portfolio() {
@@ -11,102 +11,80 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: 'Social Media Campaign - Tech Startup',
-      category: 'social',
-      type: 'Social Media Management',
-      description: 'Complete social media strategy and content creation for a growing tech startup.',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop',
-      technologies: ['Instagram', 'Facebook', 'Content Strategy'],
-      link: 'https://www.instagram.com/pro_goteam/',
-      metrics: '300% engagement increase'
+      title: 'Professional Video Edit - Educational Content',
+      category: 'video',
+      type: 'Video Editing',
+      description: 'High-quality educational video editing with smooth transitions and professional audio enhancement.',
+      image: 'https://img.youtube.com/vi/bbipKHCH7bQ/maxresdefault.jpg',
+      technologies: ['Premiere Pro', 'After Effects', 'Audio Enhancement'],
+      link: 'https://youtu.be/bbipKHCH7bQ?si=RT5BesPDK110QdEW',
+      isVideo: true,
+      metrics: 'Professional Grade'
     },
     {
       id: 2,
-      title: 'Product Launch Video Series',
+      title: 'Creative Video Production',
       category: 'video',
       type: 'Video Editing',
-      description: 'Professional video editing for product launch with motion graphics and animations.',
-      image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=500&h=300&fit=crop',
-      technologies: ['After Effects', 'Premiere Pro', 'Motion Graphics'],
-      link: '#',
+      description: 'Creative video editing with dynamic cuts, color grading, and motion graphics.',
+      image: 'https://img.youtube.com/vi/cczDofTr2PE/maxresdefault.jpg',
+      technologies: ['Final Cut Pro', 'Color Grading', 'Motion Graphics'],
+      link: 'https://youtu.be/cczDofTr2PE?si=YRgQBiEfEXpwFl8I',
       isVideo: true,
-      metrics: '50K+ views across platforms'
+      metrics: 'Creative Excellence'
     },
     {
       id: 3,
-      title: 'Restaurant Brand Identity',
-      category: 'design',
-      type: 'Graphic Design',
-      description: 'Complete brand identity design including logo, menu, and promotional materials.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-      technologies: ['Adobe Illustrator', 'Photoshop', 'Brand Design'],
-      link: '#',
-      metrics: 'Complete brand transformation'
+      title: 'Promotional Video Content',
+      category: 'video',
+      type: 'Video Editing',
+      description: 'Engaging promotional video with professional storytelling and visual effects.',
+      image: 'https://img.youtube.com/vi/JaJzhELVmqA/maxresdefault.jpg',
+      technologies: ['Premiere Pro', 'Visual Effects', 'Sound Design'],
+      link: 'https://youtu.be/JaJzhELVmqA?si=RGsFAwrBjdCDHGSZ',
+      isVideo: true,
+      metrics: 'High Engagement'
     },
     {
       id: 4,
-      title: 'E-commerce Website',
-      category: 'tech',
-      type: 'Website Development',
-      description: 'Responsive e-commerce website with modern design and seamless user experience.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-      technologies: ['React', 'Node.js', 'Stripe Integration'],
-      link: '#',
-      metrics: '200% conversion rate improvement'
+      title: 'Advanced Video Edit',
+      category: 'video',
+      type: 'Video Editing',
+      description: 'Advanced video editing techniques with cinematic quality and professional post-production.',
+      image: 'https://img.youtube.com/vi/_5PwHr1hE38/maxresdefault.jpg',
+      technologies: ['DaVinci Resolve', 'Cinematic Editing', 'Professional Audio'],
+      link: 'https://youtu.be/_5PwHr1hE38?si=YlqUwn4esQo7s7xn',
+      isVideo: true,
+      metrics: 'Cinematic Quality'
     },
     {
       id: 5,
-      title: 'Corporate Video Content',
-      category: 'video',
-      type: 'Video Editing',
-      description: 'Professional corporate video editing with testimonials and company showcase.',
-      image: 'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=500&h=300&fit=crop',
-      technologies: ['Final Cut Pro', 'Color Grading', 'Audio Enhancement'],
-      link: '#',
-      isVideo: true,
-      metrics: 'Used for global presentations'
+      title: 'AWS-Sable Platform',
+      category: 'tech',
+      type: 'Web Development',
+      description: 'Modern cloud platform built with advanced AWS integration and scalable architecture.',
+      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=300&fit=crop',
+      technologies: ['AWS', 'React', 'Node.js', 'Cloud Architecture'],
+      link: 'https://aws-sable.vercel.app',
+      metrics: 'Cloud-Scale Solution'
     },
     {
       id: 6,
-      title: 'Marketing Poster Collection',
-      category: 'design',
-      type: 'Poster Design',
-      description: 'Creative poster designs for various marketing campaigns and events.',
-      image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&h=300&fit=crop',
-      technologies: ['Adobe Creative Suite', 'Typography', 'Visual Design'],
-      link: '#',
-      metrics: '15+ unique designs delivered'
-    },
-    {
-      id: 7,
-      title: 'Small Business Social Media',
-      category: 'social',
-      type: 'Social Media Handling',
-      description: 'Monthly social media management for local business growth.',
-      image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&h=300&fit=crop',
-      technologies: ['Content Creation', 'Scheduling', 'Analytics'],
-      link: 'https://www.instagram.com/pro_goteam/',
-      metrics: '500+ new followers monthly'
-    },
-    {
-      id: 8,
-      title: 'Custom Software Solution',
+      title: 'IndPro Business Platform',
       category: 'tech',
-      type: 'Custom Software',
-      description: 'Tailored inventory management system for retail business.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      technologies: ['Python', 'Django', 'PostgreSQL'],
-      link: '#',
-      metrics: 'Reduced processing time by 70%'
+      type: 'Web Development',
+      description: 'Comprehensive business platform with modern UI/UX and robust backend functionality.',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
+      technologies: ['Next.js', 'TypeScript', 'Modern UI/UX', 'API Integration'],
+      link: 'https://finalised-indpro.vercel.app/',
+      metrics: 'Enterprise Grade'
     }
   ];
 
   const filters = [
     { id: 'all', label: 'All Projects', icon: null },
-    { id: 'social', label: 'Social Media', icon: Instagram },
     { id: 'video', label: 'Video Editing', icon: Video },
-    { id: 'design', label: 'Design Projects', icon: Palette },
-    { id: 'tech', label: 'Tech Projects', icon: ExternalLink }
+    { id: 'tech', label: 'Tech Projects', icon: Code }
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -172,10 +150,10 @@ export default function Portfolio() {
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Explore our diverse portfolio of successful projects across creative and technical domains.
+            Explore our professional video editing and web development projects showcasing our expertise.
           </motion.p>
 
-          {/* Filter buttons with enhanced animations */}
+          {/* Filter buttons */}
           <motion.div 
             className="flex flex-wrap justify-center gap-4"
             variants={containerVariants}
@@ -206,7 +184,7 @@ export default function Portfolio() {
           </motion.div>
         </motion.div>
 
-        {/* Projects grid with enhanced animations */}
+        {/* Projects grid */}
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           layout
@@ -228,8 +206,23 @@ export default function Portfolio() {
                 scale: 1.02,
                 transition: { duration: 0.3 }
               }}
+              className="relative"
             >
-              <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 bg-white/90 backdrop-blur-sm border-0 shadow-lg h-full">
+              {/* Popular badge - Fixed positioning */}
+              {index === 1 && (
+                <motion.div 
+                  className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-20"
+                  initial={{ opacity: 0, scale: 0, y: -10 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
+                >
+                  <Badge className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-1 text-sm shadow-lg">
+                    Most Popular
+                  </Badge>
+                </motion.div>
+              )}
+              
+              <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border-0 shadow-lg h-full">
                 <div className="relative overflow-hidden">
                   <motion.img 
                     src={project.image} 
@@ -244,7 +237,7 @@ export default function Portfolio() {
                       whileHover={{ scale: 1.1 }}
                     >
                       <motion.div 
-                        className="bg-white/90 rounded-full p-3"
+                        className="bg-white/90 rounded-full p-3 shadow-lg"
                         whileHover={{ scale: 1.2, rotate: 360 }}
                         transition={{ duration: 0.6 }}
                       >
@@ -258,7 +251,7 @@ export default function Portfolio() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.3 }}
                   >
-                    <Badge variant="secondary" className="bg-white/90 text-primary backdrop-blur-sm">
+                    <Badge variant="secondary" className="bg-white/90 dark:bg-slate-700/90 text-primary backdrop-blur-sm">
                       {project.type}
                     </Badge>
                   </motion.div>
@@ -270,7 +263,7 @@ export default function Portfolio() {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.4 }}
                     >
-                      <Badge className="bg-green-600/90 text-white backdrop-blur-sm">
+                      <Badge className="bg-green-600/90 text-white backdrop-blur-sm shadow-lg">
                         {project.metrics}
                       </Badge>
                     </motion.div>
@@ -279,13 +272,13 @@ export default function Portfolio() {
                 
                 <CardContent className="p-6">
                   <motion.h3 
-                    className="text-xl font-bold mb-2 group-hover:text-primary transition-colors"
+                    className="text-xl font-bold mb-2 group-hover:text-primary transition-colors text-foreground dark:text-white"
                     whileHover={{ x: 5 }}
                   >
                     {project.title}
                   </motion.h3>
                   <motion.p 
-                    className="text-muted-foreground mb-4"
+                    className="text-muted-foreground dark:text-slate-300 mb-4"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
@@ -308,7 +301,7 @@ export default function Portfolio() {
                         transition={{ delay: techIndex * 0.1 }}
                         whileHover={{ scale: 1.1 }}
                       >
-                        <Badge variant="outline" className="text-xs">
+                        <Badge variant="outline" className="text-xs dark:text-slate-300 dark:border-slate-600">
                           {tech}
                         </Badge>
                       </motion.div>
@@ -321,20 +314,11 @@ export default function Portfolio() {
                   >
                     <Button 
                       variant="outline" 
-                      className="w-full group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
-                      onClick={() => {
-                        if (project.link === 'https://www.instagram.com/pro_goteam/') {
-                          window.open(project.link, '_blank');
-                        } else {
-                          // For other projects, open WhatsApp with inquiry
-                          const message = `Hi! I'm interested in learning more about your ${project.title} project. Could you share more details?`;
-                          const whatsappUrl = `https://wa.me/918299721019?text=${encodeURIComponent(message)}`;
-                          window.open(whatsappUrl, '_blank');
-                        }
-                      }}
+                      className="w-full group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-md hover:shadow-lg dark:text-white dark:border-slate-600 dark:hover:bg-primary"
+                      onClick={() => window.open(project.link, '_blank')}
                     >
                       <ExternalLink className="h-4 w-4 mr-2" />
-                      {project.link === 'https://www.instagram.com/pro_goteam/' ? 'View on Instagram' : 'Learn More'}
+                      {project.isVideo ? 'Watch Video' : 'Visit Website'}
                     </Button>
                   </motion.div>
                 </CardContent>

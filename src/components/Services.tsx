@@ -87,23 +87,23 @@ export default function Services() {
         transition: { duration: 0.3 }
       }}
     >
-      <Card className="h-full group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border-0 shadow-lg overflow-hidden">
+      <Card className="h-full group hover:shadow-2xl transition-all duration-500 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 backdrop-blur-sm border-0 shadow-lg overflow-hidden">
         <CardHeader className="text-center relative">
           <motion.div 
             className={`mx-auto mb-4 p-4 bg-${color}-100 dark:bg-${color}-900/20 rounded-full w-fit`}
             whileHover={{ 
               scale: 1.2, 
               rotate: 360,
-              backgroundColor: color === 'blue' ? "rgb(59, 130, 246)" : "rgb(147, 51, 234)"
+              backgroundColor: color === 'blue' ? "rgba(59, 130, 246,.3)" : "rgba(147, 51, 234,0.3)"
             }}
             transition={{ duration: 0.6 }}
           >
             <service.icon className={`h-8 w-8 text-${color}-600 group-hover:text-white transition-colors duration-300`} />
           </motion.div>
-          <CardTitle className={`text-xl font-bold group-hover:text-${color}-600 transition-colors`}>
+          <CardTitle className={`text-xl font-bold group-hover:text-${color}-600 transition-colors text-gray-900 dark:text-white`}>
             {service.title}
           </CardTitle>
-          <CardDescription className="text-muted-foreground">
+          <CardDescription className="text-gray-700 dark:text-gray-300">
             {service.description}
           </CardDescription>
         </CardHeader>
@@ -112,7 +112,7 @@ export default function Services() {
             {service.features.map((feature, idx) => (
               <motion.li 
                 key={idx} 
-                className="flex items-center text-sm text-muted-foreground"
+                className="flex items-center text-sm text-gray-700 dark:text-gray-300"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: idx * 0.1 }}

@@ -1,19 +1,10 @@
-import { ArrowRight, Sparkles, Globe } from 'lucide-react';
+
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import ThreeBackground from './ThreeBackground';
 
 export default function Hero() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,20 +30,13 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* 3D Background */}
+      <ThreeBackground />
+      
       {/* Enhanced background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 via-white/80 to-purple-50/90 dark:from-slate-900/90 dark:via-slate-800/80 dark:to-slate-900/90"></div>
       
-      {/* Interactive mouse follower */}
-      <motion.div
-        className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-blue-400/20 to-purple-500/20 blur-3xl pointer-events-none"
-        animate={{
-          x: mousePosition.x - 128,
-          y: mousePosition.y - 128,
-        }}
-        transition={{ type: "spring", damping: 30, stiffness: 200 }}
-      />
-
-      {/* Animated background elements */}
+      {/* Animated background elements with more dynamics */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
           className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 opacity-20"
@@ -113,9 +97,9 @@ export default function Hero() {
               animate={{ rotate: 360 }}
               transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
             >
-              <Globe size={16} />
+              <Sparkles size={16} />
             </motion.div>
-            <span>International Freelancing Company</span>
+            <span>Your Digital Success Partner</span>
           </motion.div>
 
           {/* Enhanced main heading with 3D text effect */}
@@ -144,7 +128,7 @@ export default function Hero() {
                 backgroundSize: '200% 200%'
               }}
             >
-              Excellence
+              Experiences
             </motion.span>
           </motion.h1>
 
@@ -153,7 +137,7 @@ export default function Hero() {
             className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            From stunning creative content to comprehensive digital marketing, we provide end-to-end freelancing solutions for businesses worldwide.
+            From cutting-edge web development to stunning visual content, we provide comprehensive tech and creative solutions for your business growth.
           </motion.p>
 
           {/* Enhanced CTA buttons with 3D effects */}
@@ -190,9 +174,9 @@ export default function Hero() {
                 variant="outline" 
                 size="lg"
                 className="px-8 py-4 rounded-full border-2 hover:bg-primary/10 backdrop-blur-sm shadow-xl"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                View Pricing
+                View Portfolio
               </Button>
             </motion.div>
           </motion.div>
@@ -203,9 +187,9 @@ export default function Hero() {
             variants={containerVariants}
           >
             {[
-              { number: "20+", label: "Projects Completed" },
-              { number: "5+", label: "Happy Clients" },
-              { number: "100%", label: "Client Satisfaction" },
+              { number: "50+", label: "Projects Completed" },
+              { number: "25+", label: "Happy Clients" },
+              { number: "6", label: "Services Offered" },
               { number: "24/7", label: "Support" }
             ].map((stat, index) => (
               <motion.div

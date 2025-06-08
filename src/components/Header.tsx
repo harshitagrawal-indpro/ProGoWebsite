@@ -58,9 +58,9 @@ export default function Header() {
           <div className="flex-shrink-0 flex items-center">
             <a href="/" className="flex items-center space-x-2">
               <img 
-                src="/assets/logo.png" 
+                src="https://i.ibb.co/bjJPCkdw/Screenshot-8-6-2025-13140-web-whatsapp-com.jpg" 
                 alt="PROGO Logo" 
-                className="w-8 h-8 object-contain"
+                className="w-8 h-8 object-contain rounded"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                 }}
