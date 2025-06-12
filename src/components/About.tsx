@@ -82,6 +82,48 @@ export default function About() {
       linkedin: '#',
       gradient: 'from-indigo-400 to-purple-500'
     }
+    ,{
+      name: 'Ishaan Chitkarsh',
+      role: 'Lead Developer',
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQFKj4FyCLTUJg/profile-displayphoto-shrink_800_800/B56Zb.btTvH4Ag-/0/1748025399093?e=1755129600&v=beta&t=CqT7yp6cU5DNoZxaNHqce_EiG4ENcTgSu9z_AXfACIo',
+      bio: 'Make the ideas to the digital assets.',
+      linkedin: '#',
+      gradient: 'from-indigo-400 to-purple-500'
+    }
+    ,{
+      name: 'Kshitij Singh',
+      role: 'Developer',
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQGDQZYpWsH_Kg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696059569002?e=1755129600&v=beta&t=kBxfV9cYQsFiEvZlA3A9Jt9HjoeYHsH5r1H7Ajy0Plc',
+      bio: 'Make the ideas to the digital assets.',
+      linkedin: '#',
+      gradient: 'from-indigo-400 to-purple-500'
+    }
+    ,{
+      name: 'Lokesh Vemmuri',
+      role: 'Developer',
+      image: 'https://i.ibb.co/Wv49wNvX/image.png', 
+      bio: 'Make the ideas to the digital assets.',
+      linkedin: '#',
+      gradient: 'from-indigo-400 to-purple-500'
+    }
+    ,{
+      
+      name: 'Vedansh Singh',
+      role: 'Lead of HR and Operations Head',
+      image: 'https://i.ibb.co/YTQk2KgP/image.png',
+      bio: ' Ex-Human Resource Manager and ASL at gaotek.Inc | Innovation Strategist Strategic Thinker',
+      linkedin: 'https://www.linkedin.com/in/vedansh-singh-36a816329/',
+      gradient: 'from-indigo-400 to-purple-500'
+    },
+    {
+      
+      name: 'Sri Nandika Vadlamani',
+      role: 'Developer',
+      image: 'https://i.ibb.co/1GRMV0HY/image.png',
+      bio: 'Make the ideas to the digital assets.',
+      linkedin: '#',
+      gradient: 'from-indigo-400 to-purple-500'
+    }
   ];
 
   const containerVariants = {
