@@ -31,7 +31,7 @@ export default function About() {
       role: 'Founder & CEO',
       image: 'https://media.licdn.com/dms/image/v2/D5603AQHGIbaTVhguDw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715881696505?e=1755129600&v=beta&t=J9ncujJ8z9u0EDZH5_euBHDM2Qs817R2iCtbuMn7y_Q',
       bio: 'Visionary leader with extensive experience in digital solutions and business strategy.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/harshitagrawal700/',
       gradient: 'from-yellow-400 to-orange-500'
     },
     {
@@ -39,7 +39,7 @@ export default function About() {
       role: 'Co-founder & Web Development Lead',
       image: 'https://i.ibb.co/GvGmVj8Q/image.png',
       bio: 'Expert digital marketer and researcher, driving innovative marketing strategies.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/prajwal-mahajan-42b293256/',
       gradient: 'from-blue-400 to-purple-500'
     },
     {
@@ -55,7 +55,7 @@ export default function About() {
       role: 'Co FOunder and Lead Video Editor',
       image: 'https://i.ibb.co/GvZwK6d4/image.png',
       bio: 'Creative video editing specialist with a passion for storytelling through visuals.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/anurag-singh-995a71302/',
       gradient: 'from-green-400 to-teal-500'
     },
     {
@@ -63,7 +63,7 @@ export default function About() {
       role: 'Lead of Design Team',
       image: 'https://media.licdn.com/dms/image/v2/D4D03AQHkV0RQSkMMzQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707935936825?e=1755129600&v=beta&t=5aaFP6MsGb5cOdRKibR2NS_Qpqzb6SWgwQV9-wxlT3g',
       bio: 'Talented designer creating stunning visuals that captivate and convert.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/shalini-singh9125/',
       gradient: 'from-pink-400 to-red-500'
     },
     {
@@ -71,7 +71,7 @@ export default function About() {
       role: 'Tech R&D Lead',
       image: 'https://i.ibb.co/mVmtZvfj/image.png',
       bio: 'Technical research and development specialist driving innovation in software solutions.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/muditsaxena30/',
       gradient: 'from-cyan-400 to-blue-500'
     },
     {
@@ -87,7 +87,7 @@ export default function About() {
       role: 'Lead Developer',
       image: 'https://media.licdn.com/dms/image/v2/D5603AQFKj4FyCLTUJg/profile-displayphoto-shrink_800_800/B56Zb.btTvH4Ag-/0/1748025399093?e=1755129600&v=beta&t=CqT7yp6cU5DNoZxaNHqce_EiG4ENcTgSu9z_AXfACIo',
       bio: 'Make the ideas to the digital assets.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/ishan-chitkarsh/',
       gradient: 'from-indigo-400 to-purple-500'
     }
     ,{
@@ -95,7 +95,7 @@ export default function About() {
       role: 'Developer',
       image: 'https://media.licdn.com/dms/image/v2/D5603AQGDQZYpWsH_Kg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696059569002?e=1755129600&v=beta&t=kBxfV9cYQsFiEvZlA3A9Jt9HjoeYHsH5r1H7Ajy0Plc',
       bio: 'Make the ideas to the digital assets.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/kshitij-singh-607147283',
       gradient: 'from-indigo-400 to-purple-500'
     }
     ,{
@@ -103,7 +103,7 @@ export default function About() {
       role: 'Developer',
       image: 'https://i.ibb.co/Wv49wNvX/image.png', 
       bio: 'Make the ideas to the digital assets.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/lokesh-vemuri-7122a1294/',
       gradient: 'from-indigo-400 to-purple-500'
     }
     ,{
@@ -121,7 +121,7 @@ export default function About() {
       role: 'Developer',
       image: 'https://i.ibb.co/1GRMV0HY/image.png',
       bio: 'Make the ideas to the digital assets.',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/sri-nandika-vadlamani-4807b6309/',
       gradient: 'from-indigo-400 to-purple-500'
     }
   ];
