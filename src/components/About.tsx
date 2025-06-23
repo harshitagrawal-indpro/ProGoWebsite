@@ -35,9 +35,9 @@ export default function About() {
       gradient: 'from-yellow-400 to-orange-500'
     },
     {
-      name: 'Anurag Singh',
-      role: 'Co-founder & Lead Digital Marketer',
-      image: 'https://i.ibb.co/GvZwK6d4/image.png',
+      name: 'Prajwal Mahajan',
+      role: 'Co-founder & Web Development Lead',
+      image: 'https://i.ibb.co/GvGmVj8Q/image.png',
       bio: 'Expert digital marketer and researcher, driving innovative marketing strategies.',
       linkedin: '#',
       gradient: 'from-blue-400 to-purple-500'
@@ -51,9 +51,9 @@ export default function About() {
       gradient: 'from-purple-400 to-pink-500'
     },
     {
-      name: 'Prajwal Mahajan',
+      name: 'Anurag Singh',
       role: 'Lead Video Editor',
-      image: 'https://i.ibb.co/GvGmVj8Q/image.png',
+      image: 'https://i.ibb.co/GvZwK6d4/image.png',
       bio: 'Creative video editing specialist with a passion for storytelling through visuals.',
       linkedin: '#',
       gradient: 'from-green-400 to-teal-500'
