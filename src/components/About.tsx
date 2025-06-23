@@ -27,19 +27,19 @@ export default function About() {
 
   const teamMembers = [
     {
-      name: 'Harshit Agrawal',
+      name: 'Prajwal Mahajan',
       role: 'Founder & CEO',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQHGIbaTVhguDw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715881696505?e=1755129600&v=beta&t=J9ncujJ8z9u0EDZH5_euBHDM2Qs817R2iCtbuMn7y_Q',
+      image: 'https://i.ibb.co/GvGmVj8Q/image.png',
       bio: 'Visionary leader with extensive experience in digital solutions and business strategy.',
-      linkedin: 'https://www.linkedin.com/in/harshitagrawal700/',
+      linkedin: 'https://www.linkedin.com/in/prajwal-mahajan-42b293256/',
       gradient: 'from-yellow-400 to-orange-500'
     },
     {
-      name: 'Prajwal Mahajan',
+      name: 'Harshit Agrawal',
       role: 'Co-founder & Web Development Lead',
-      image: 'https://i.ibb.co/GvGmVj8Q/image.png',
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQHGIbaTVhguDw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715881696505?e=1755129600&v=beta&t=J9ncujJ8z9u0EDZH5_euBHDM2Qs817R2iCtbuMn7y_Q',
       bio: 'Expert digital marketer and researcher, driving innovative marketing strategies.',
-      linkedin: 'https://www.linkedin.com/in/prajwal-mahajan-42b293256/',
+      linkedin: 'https://www.linkedin.com/in/harshitagrawal700/',
       gradient: 'from-blue-400 to-purple-500'
     },
     {
