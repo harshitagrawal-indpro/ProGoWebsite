@@ -52,7 +52,7 @@ export default function About() {
     },
     {
       name: 'Anurag Singh',
-      role: 'Lead Video Editor',
+      role: 'Co FOunder and Lead Video Editor',
       image: 'https://i.ibb.co/GvZwK6d4/image.png',
       bio: 'Creative video editing specialist with a passion for storytelling through visuals.',
       linkedin: '#',
